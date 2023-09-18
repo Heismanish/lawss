@@ -2,8 +2,13 @@ function Fifth() {
 	return (
 		<div className="mx-12 md:mx-32">
 			<iframe
-				src="https://www.youtube.com/watch?v=1lDMezYfHws&t=1s"
-				className=""
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/1lDMezYfHws?si=ncDPG0HCXZcaIqf0"
+				title="YouTube video player"
+				frameBorder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
 			></iframe>
 		</div>
 	);
