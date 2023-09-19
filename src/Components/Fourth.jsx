@@ -1,6 +1,6 @@
 function Fourth() {
 	return (
-		<div className="my-44 mx-12 md:mx-32">
+		<div id="faq" className="my-44 mx-12 md:mx-32">
 			<h1 className="font-Jua text-6xl mb-28 text-[#277da1] font-semibold  ">
 				Get your question answered
 			</h1>

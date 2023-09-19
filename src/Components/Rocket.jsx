@@ -1,15 +1,13 @@
-import React from "react";
-
 function Rocket() {
 	return (
-		<>
+		<div className="bg-[#1b9aaa] bg-opacity-80 min-h-screen text-center flex justify-center items-center">
 			<div className="relative ">
-				<h1 className="absolute -top-16 -right-8 md:-right-16">top right</h1>
+				{/* <h1 className="absolute -top-16 -right-8 md:-right-16">top right</h1>
 				<h1 className="absolute -top-16 -left-8 md:-left-16">top left</h1>
 				<h1 className="absolute -bottom-16 -right-8 md:-right-166">
 					bot right
 				</h1>
-				<h1 className="absolute -bottom-16  -left-8 md:-left-16">bot left</h1>{" "}
+				<h1 className="absolute -bottom-16  -left-8 md:-left-16">bot left</h1>{" "} */}
 				<svg
 					version="1.1"
 					id="Layer_1"
@@ -100,7 +98,7 @@ function Rocket() {
 			<div className="absolute bg-[#ffc43d] text-7xl font-Margarine p-6 rounded-2xl">
 				Inclusivity
 			</div>
-		</>
+		</div>
 	);
 }
 

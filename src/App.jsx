@@ -1,22 +1,14 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./Components/Home";
-import Second from "./Components/Second";
-import Third from "./Components/Third";
-import Fourth from "./Components/Fourth";
-import Fifth from "./Components/Fifth";
-import Sixth from "./Components/Sixth";
-import Footer from "./Components/Footer";
-
+import Navbar from "./Components/Navbar";
+import Homepage from "./Pages/Homepage";
 function App() {
 	return (
 		<>
-			<Home />
-			<Second />
-			<Third />
-			<Fourth />
-			<Fifth />
-			<Sixth />
-			<Footer />
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Homepage></Homepage>}></Route>
+			</Routes>
 		</>
 	);
 }

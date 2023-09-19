@@ -1,9 +1,11 @@
-import React from "react";
 import second from "../../public/second.avif";
 function Second() {
 	return (
 		<div className="mx-12 md:mx-32">
-			<div className="flex flex-col md:flex-row justify-around items-center my-16 md:my-44 gap-12 md:gap-4">
+			<div
+				id="games"
+				className="flex flex-col md:flex-row justify-around items-center my-16 md:my-44 gap-12 md:gap-4"
+			>
 				<main className="flex flex-col gap-16 max-w-xl ">
 					<div>
 						<h1 className="font-Jua text-7xl text-gray-900 mb-8">Empower</h1>
@@ -24,7 +26,10 @@ function Second() {
 					className="rounded-2xl object-contain w-[500px] lg:w-[600px] "
 				/>
 			</div>
-			<div className="flex flex-col md:flex-row justify-around items-center my-12 md:my-44 gap-12 md:gap-4">
+			<div
+				id="learn"
+				className="flex flex-col md:flex-row justify-around items-center my-12 md:my-44 gap-12 md:gap-4"
+			>
 				<main className="flex flex-col gap-16 max-w-xl md:order-2">
 					<div>
 						<h1 className="font-Jua text-3xl text-[#277da1] mb-8">
@@ -47,13 +52,16 @@ function Second() {
 					className="rounded-2xl object-contain w-[500px] lg:w-[600px] "
 				/>
 			</div>
-			<div className="flex flex-col md:flex-row justify-around items-center md:12 md:my-44  gap-12 md:gap-4">
+			<div
+				id="connect"
+				className="flex flex-col md:flex-row justify-around items-center md:12 md:my-44  gap-12 md:gap-4"
+			>
 				<main className="flex flex-col gap-16 max-w-xl ">
 					<div>
 						<h1 className="font-Jua text-3xl text-[#277da1] mb-8">
 							Social connectivity and child rights organizations
 						</h1>
-						<p className="text-[#277da1]   text-xl">
+						<p className="text-[#277da1] text-xl">
 							Connect with child rights organizations, collaborate, and engage
 							with like-minded children on the path to social justice.
 						</p>
