@@ -58,7 +58,7 @@ export default function Navbar() {
 							<Link
 								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit :hover:bg-opacity-70 md:hover:text-black  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  rounded md:bg-transparent md:text-gray-700 md:p-0 "
 								activeClass="active"
-								to="game"
+								to="games"
 								spy={true}
 								smooth={true}
 								offset={-70}
