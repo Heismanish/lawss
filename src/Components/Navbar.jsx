@@ -1,12 +1,15 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
 	const navToggle = useRef();
+	const navigate = useNavigate();
 
 	const navToggleHandler = () => {
 		navToggle.current.classList.toggle("hidden");
 	};
+
 	return (
 		<nav className=" absolute top-0 left-0 right-0 z-10 py-4 md:py-6 h-16 px-4  bg-white border-gray-200  shadow-lg">
 			<div className="container mx-auto flex flex-wrap justify-between items-center">
@@ -53,23 +56,19 @@ export default function Navbar() {
 					id="navbar-default"
 					ref={navToggle}
 				>
-					<ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white  0 shadow-md md:shadow-none">
+					<ul className="font-medium flex flex-col justify-center items-center p-4 md:p-0 mt-4 border  border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white  0 shadow-md md:shadow-none">
 						<li>
-							<Link
-								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit :hover:bg-opacity-70 md:hover:text-black  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  rounded md:bg-transparent md:text-gray-700 md:p-0 "
-								activeClass="active"
-								to="games"
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								onClick={navToggleHandler}
+							<button
+								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0"
+								onClick={() => {
+									navigate("/games");
+								}}
 							>
 								Games
-							</Link>
+							</button>
 						</li>
 						<li>
-							<Link
+							{/* <Link
 								className={
 									" transition ease-linear duration-400 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  rounded md:bg-transparent md:text-gray-700 md:p-0  md::text-gray-500"
 								}
@@ -81,11 +80,19 @@ export default function Navbar() {
 								duration={500}
 								onClick={navToggleHandler}
 							>
-								Learn
-							</Link>
+								About
+							</Link> */}
+							<button
+								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0"
+								onClick={() => {
+									navigate("/about");
+								}}
+							>
+								About
+							</button>
 						</li>
 						<li>
-							<Link
+							{/* <Link
 								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  rounded md:bg-transparent md:text-gray-700 md:p-0  "
 								activeClass="active"
 								to="connect"
@@ -96,10 +103,18 @@ export default function Navbar() {
 								onClick={navToggleHandler}
 							>
 								Connect
-							</Link>
+							</Link> */}
+							<button
+								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0"
+								onClick={() => {
+									navigate("/Modules");
+								}}
+							>
+								Modules
+							</button>
 						</li>
 						<li>
-							<Link
+							{/* <Link
 								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  rounded md:bg-transparent md:text-gray-700 md:p-0 "
 								activeClass="active"
 								to="faq"
@@ -110,28 +125,25 @@ export default function Navbar() {
 								onClick={navToggleHandler}
 							>
 								FAQ{" "}
-							</Link>
-						</li>
-						<li>
-							<Link
-								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100 :bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 "
-								activeClass="active"
-								to="join"
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								onClick={navToggleHandler}
+							</Link> */}
+							<button
+								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0"
+								onClick={() => {
+									navigate("/quiz");
+								}}
 							>
-								Join Us
-							</Link>
+								Quiz
+							</button>
 						</li>
 						<li>
-							<a
-								href="https://github.com/Heismanish"
-								target="blank"
-								className=" hidden lg:inliine-block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  "
-							></a>
+							<button
+								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-white  rounded bg-blue-300  md:text-white md:p-1"
+								onClick={() => {
+									navigate("/Modules");
+								}}
+							>
+								SignUp
+							</button>
 						</li>
 					</ul>
 				</div>

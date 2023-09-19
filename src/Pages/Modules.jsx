@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import welcome from "../../public/cole-welcome.png";
 import Footer from "../Components/Footer";
 
@@ -18,7 +17,6 @@ function Modules() {
 							RightsLand
 						</h1>
 						<p className="text-6xl font-normal">Adventure</p>
-						<Link to="welcome"> Welcome</Link>
 					</main>
 				</div>
 				{/* Second Section */}
@@ -100,11 +98,11 @@ function Modules() {
 				{/* Fourth Section */}
 				<div className=" flex flex-col md:flex-row justify-start items-center mx-auto my-12 md:my-32 ">
 					<main>
-						<h1 className="text-black text-center md:text-left font-semibold text-3xl md:text-4xl max-w-5xl md:mb-12 mb-8">
+						<h1 className="text-black    md:text-left font-semibold text-3xl md:text-4xl max-w-5xl md:mb-12 mb-8">
 							The adventure of a lifetime awaits. Are you ready to embark on
 							this magical journey? Join RightsLand now!{" "}
 						</h1>
-						<button className="rounded-3xl bg-black text-[#ff9100] px-6 py-3 md:mr-8">
+						<button className="rounded-3xl bg-black text-[#ff9100] px-6 py-3 mr-8">
 							Start Your Adventure
 						</button>
 						<button className="rounded-3xl bg-[#0096c7] text-gray-100 px-6 py-3">
