@@ -102,7 +102,7 @@ function Modules() {
 							The adventure of a lifetime awaits. Are you ready to embark on
 							this magical journey? Join RightsLand now!{" "}
 						</h1>
-						<button className="rounded-3xl bg-black text-[#ff9100] px-6 py-3 mr-8">
+						<button className="rounded-3xl bg-black text-[#ff9100] px-6 py-3 mb-2 sm:mr-8">
 							Start Your Adventure
 						</button>
 						<button className="rounded-3xl bg-[#0096c7] text-gray-100 px-6 py-3">

@@ -11,11 +11,11 @@ function Quiz() {
 					QUIZ
 				</h1>
 				<p className="text-xl  text-center text-gray-800">
-					" Get ready for the ultimate Children’s Rights Quiz showdown! Compete
-					alongside your friends and classmates in a fun, interactive
+					&quot; Get ready for the ultimate Children’s Rights Quiz showdown!
+					Compete alongside your friends and classmates in a fun, interactive
 					multiplayer extravaganza that tests your knowledge of the essential
 					rights every child deserves. Prepare to be challenged and entertained
-					– let the games begin!"
+					– let the games begin!&quot;
 				</p>
 			</div>
 
@@ -29,7 +29,7 @@ function Quiz() {
 					/>
 					<div className="absolute inset-0 flex justify-center items-center">
 						<h1 className="font-medium text-white sm:text-xl md:text-3xl lg:text-5xl z-10">
-							"Master the rights knowledge"
+							&quot;Master the rights knowledge&quot;
 						</h1>
 					</div>
 				</div>

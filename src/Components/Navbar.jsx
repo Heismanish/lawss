@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 export default function Navbar() {
 	const navToggle = useRef();
@@ -13,7 +13,7 @@ export default function Navbar() {
 	return (
 		<nav className=" absolute top-0 left-0 right-0 z-10 py-4 md:py-6 h-16 px-4  bg-white border-gray-200  shadow-lg">
 			<div className="container mx-auto flex flex-wrap justify-between items-center">
-				<Link
+				{/* <Link
 					className="flex items-center cursor-pointer"
 					activeClass="active"
 					to="#"
@@ -25,7 +25,18 @@ export default function Navbar() {
 					<span className="self-center text-2xl font-medium whitespace-nowrap ">
 						Lawkey{" "}
 					</span>{" "}
-				</Link>
+				</Link> */}
+				<button
+					className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0"
+					onClick={() => {
+						navigate("/");
+					}}
+				>
+					<span className="self-center text-2xl font-medium whitespace-nowrap ">
+						Lawkey{" "}
+					</span>
+				</button>
+
 				<button
 					onClick={navToggleHandler}
 					data-collapse-toggle="navbar-default"
@@ -137,7 +148,7 @@ export default function Navbar() {
 						</li>
 						<li>
 							<button
-								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-white  rounded bg-blue-300  md:text-white md:p-1"
+								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-white  rounded bg-blue-400  md:text-white md:p-1"
 								onClick={() => {
 									navigate("/Modules");
 								}}
