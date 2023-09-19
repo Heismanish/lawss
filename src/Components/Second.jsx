@@ -1,5 +1,7 @@
 import second from "../../public/second.avif";
+import { useNavigate } from "react-router-dom";
 function Second() {
+	const navigate = useNavigate();
 	return (
 		<div className="mx-12 md:mx-32">
 			<div
@@ -15,7 +17,12 @@ function Second() {
 							and accessibility through interactive and engaging gameplay.
 						</p>
 					</div>
-					<button className="items-start bg-[#277da1] py-2 rounded-lg text-gray-100 text-2xl">
+					<button
+						onClick={() => {
+							navigate("/games");
+						}}
+						className="items-start bg-[#277da1] py-2 rounded-lg text-gray-100 text-2xl"
+					>
 						Join the game
 					</button>
 				</main>
@@ -41,7 +48,12 @@ function Second() {
 							empower themselves.
 						</p>
 					</div>
-					<button className="items-start bg-[#f8961e] uppercase  py-2 rounded-lg text-gray-900 text-2xl font-light">
+					<button
+						onClick={() => {
+							navigate("/modules");
+						}}
+						className="items-start bg-[#f8961e] uppercase  py-2 rounded-lg text-gray-900 text-2xl font-light"
+					>
 						Start Learning{" "}
 					</button>
 				</main>
@@ -66,7 +78,12 @@ function Second() {
 							with like-minded children on the path to social justice.
 						</p>
 					</div>
-					<button className="items-start bg-[#f8961e] uppercase py-2 rounded-lg text-gray-900 text-2xl font-light">
+					<button
+						onClick={() => {
+							navigate("/joinus	");
+						}}
+						className="items-start bg-[#f8961e] uppercase py-2 rounded-lg text-gray-900 text-2xl font-light"
+					>
 						Connect{" "}
 					</button>
 				</main>

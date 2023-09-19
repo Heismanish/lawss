@@ -8,7 +8,7 @@ export default function Navbar() {
 		navToggle.current.classList.toggle("hidden");
 	};
 	return (
-		<nav className=" fixed top-0 left-0 right-0 z-10 py-4 md:py-6 h-16 px-4  bg-white border-gray-200  shadow-lg">
+		<nav className=" absolute top-0 left-0 right-0 z-10 py-4 md:py-6 h-16 px-4  bg-white border-gray-200  shadow-lg">
 			<div className="container mx-auto flex flex-wrap justify-between items-center">
 				<Link
 					className="flex items-center cursor-pointer"

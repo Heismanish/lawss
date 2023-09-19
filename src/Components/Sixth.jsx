@@ -1,6 +1,9 @@
 function Sixth() {
 	return (
-		<div id="join" className="flex flex-col  mx-12 md:mx-32 my-36 gap-24 ">
+		<div
+			id="join"
+			className="flex flex-col  mx-12 md:mx-32 my-36 gap-8 md:gap-24 "
+		>
 			<h1 className="text-5xl text-gray-800 font-Jua ">
 				Ready to ascend the world of child rights knowledge?
 			</h1>

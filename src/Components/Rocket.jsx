@@ -13,7 +13,7 @@ function Rocket() {
 					id="Layer_1"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 512.016 512.016"
-					className="md:w-[600px] md:h-[600px] w-[400px] h-[400px]  "
+					className="md:w-[500px] md:h-[500px] w-[400px] h-[400px]  "
 				>
 					<path
 						style={{ fill: "#FFCE54" }}
