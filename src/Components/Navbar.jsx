@@ -151,7 +151,7 @@ export default function Navbar() {
 							<button
 								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-white  rounded bg-blue-400  md:text-white md:p-1"
 								onClick={() => {
-									navigate("/Modules");
+									navigate("/");
 								}}
 							>
 								SignUp
