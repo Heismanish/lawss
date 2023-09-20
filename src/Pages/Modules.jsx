@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import welcome from "../../public/cole-welcome.png";
 import Footer from "../Components/Footer";
 
 function Modules() {
+	const navigate = useNavigate();
 	return (
 		<>
 			<div className=" mx-12 md:mx-32  ">
@@ -45,9 +47,17 @@ function Modules() {
 							<h2 className="text-[#03045e]  text-2xl font-medium mb-6 ">
 								Education Enigma
 							</h2>
-							<p className="text-[#023e8a]">
+							<p className="text-[#023e8a] mb-4">
 								Discover your right to learn in captivating real-life settings.
 							</p>
+							<button
+								onClick={() => {
+									navigate("/modules/story1");
+								}}
+								className="rounded-xl bg-[#0096c7] text-gray-100 px-4 py-2"
+							>
+								Read
+							</button>
 						</div>
 
 						<div>

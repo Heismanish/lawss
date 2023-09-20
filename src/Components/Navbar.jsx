@@ -33,7 +33,7 @@ export default function Navbar() {
 					}}
 				>
 					<span className="self-center text-2xl font-medium whitespace-nowrap ">
-						Lawkey{" "}
+						Inclusivity
 					</span>
 				</button>
 
@@ -68,40 +68,17 @@ export default function Navbar() {
 					ref={navToggle}
 				>
 					<ul className="font-medium flex flex-col justify-center items-center p-4 md:p-0 mt-4 border  border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white  0 shadow-md md:shadow-none">
-						<li>
+						{/* <li>
 							<button
 								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0"
 								onClick={() => {
-									navigate("/games");
+									navigate("/stories");
 								}}
 							>
-								Games
+								Stories
 							</button>
-						</li>
-						<li>
-							{/* <Link
-								className={
-									" transition ease-linear duration-400 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  rounded md:bg-transparent md:text-gray-700 md:p-0  md::text-gray-500"
-								}
-								activeClass="active"
-								to="learn"
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								onClick={navToggleHandler}
-							>
-								About
-							</Link> */}
-							<button
-								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0"
-								onClick={() => {
-									navigate("/about");
-								}}
-							>
-								About
-							</button>
-						</li>
+						</li> */}
+
 						<li>
 							{/* <Link
 								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  rounded md:bg-transparent md:text-gray-700 md:p-0  "
@@ -144,6 +121,30 @@ export default function Navbar() {
 								}}
 							>
 								Quiz
+							</button>
+						</li>
+						<li>
+							{/* <Link
+								className={
+									" transition ease-linear duration-400 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  rounded md:bg-transparent md:text-gray-700 md:p-0  md::text-gray-500"
+								}
+								activeClass="active"
+								to="learn"
+								spy={true}
+								smooth={true}
+								offset={-70}
+								duration={500}
+								onClick={navToggleHandler}
+							>
+								About
+							</Link> */}
+							<button
+								className="transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit  md:hover:text-black   cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100  bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0"
+								onClick={() => {
+									navigate("/contactus");
+								}}
+							>
+								Contact Us
 							</button>
 						</li>
 						<li>

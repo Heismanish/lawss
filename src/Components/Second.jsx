@@ -59,7 +59,7 @@ function Second() {
 				</main>
 
 				<img
-					src={second}
+					src="https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 					alt="empower image"
 					className="rounded-2xl object-contain w-[500px] lg:w-[600px] "
 				/>
@@ -80,7 +80,7 @@ function Second() {
 					</div>
 					<button
 						onClick={() => {
-							navigate("/joinus	");
+							navigate("/contactus");
 						}}
 						className="items-start bg-[#f8961e] uppercase py-2 rounded-lg text-gray-900 text-2xl font-light"
 					>
@@ -89,7 +89,7 @@ function Second() {
 				</main>
 
 				<img
-					src={second}
+					src="https://images.unsplash.com/photo-1612831455359-970e23a1e4e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
 					alt="empower image"
 					className="rounded-2xl object-contain w-[500px] lg:w-[600px] "
 				/>

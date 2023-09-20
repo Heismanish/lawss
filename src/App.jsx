@@ -5,7 +5,8 @@ import Homepage from "./Pages/Homepage";
 import Modules from "./Pages/Modules";
 import About from "./Pages/About";
 import Quiz from "./Pages/Quiz";
-import Games from "./Pages/Games";
+// import Games from "./Pages/Games";
+import Stories from "./Pages/Stories";
 function App() {
 	return (
 		<>
@@ -13,8 +14,8 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Homepage></Homepage>}></Route>
 				<Route path="/modules" element={<Modules />}></Route>
-				<Route path="/games" element={<Games />}></Route>
-				<Route path="/about" element={<About />}></Route>
+				<Route path="/modules/:module1" element={<Stories />}></Route>
+				<Route path="/contactus" element={<About />}></Route>
 				<Route path="/quiz" element={<Quiz />}></Route>
 			</Routes>
 		</>

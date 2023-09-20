@@ -39,7 +39,7 @@ function Fourth() {
 				<div className=" w-full flex flex-col justify-center items-center gap-8 py-12 rounded-xl bg-[#277da1] ">
 					{" "}
 					<h1 className="text-3xl text-center font-semibold font-Jua text-gray-200">
-						Ask you question here
+						Ask your question here
 					</h1>
 					<input
 						type="text"
